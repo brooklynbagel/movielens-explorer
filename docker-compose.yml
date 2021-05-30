@@ -1,0 +1,31 @@
+version: "3"
+
+services:
+  backend:
+    build: backend-python
+    ports:
+      - 5000:5000
+    environment:
+      DB_USER:
+      DB_PASSWORD:
+      DB_NAME:
+      DB_HOST: db
+    depends_on:
+      - db
+    restart: on-failure
+  frontend:
+    build: frontend-react
+    ports:
+      - 3000:3000
+    depends_on:
+      - backend
+  db:
+    image: mariadb:10.6
+    environment:
+      - MYSQL_ROOT_PASSWORD=${DB_PASSWORD}
+      - MYSQL_DATABASE=${DB_NAME}
+    volumes:
+      - ./db/sql:/docker-entrypoint-initdb.d
+      - ./db/ml-latest-small:/mnt/ml-latest-small
+    ports:
+      - 3306:3306

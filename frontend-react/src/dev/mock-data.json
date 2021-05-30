@@ -1,0 +1,52 @@
+[
+  {
+    "movie_id": "1343",
+    "title": "Cape Fear",
+    "year": 1991,
+    "genres": [
+      "Thriller"
+    ],
+    "ml_url": "https://movielens.org/movies/1343",
+    "imdb_url": "https://www.imdb.com/title/tt0101540",
+    "tmdb_url": "https://www.themoviedb.org/movie/1598"
+  },
+  {
+    "movie_id": "48516",
+    "title": "Departed, The",
+    "year": 2006,
+    "genres": [
+      "Crime",
+      "Drama",
+      "Thriller"
+    ],
+    "ml_url": "https://movielens.org/movies/48516",
+    "imdb_url": "https://www.imdb.com/title/tt0407887",
+    "tmdb_url": "https://www.themoviedb.org/movie/1422"
+  },
+  {
+    "movie_id": "74458",
+    "title": "Shutter Island",
+    "year": 2010,
+    "genres": [
+      "Drama",
+      "Mystery",
+      "Thriller"
+    ],
+    "ml_url": "https://movielens.org/movies/74458",
+    "imdb_url": "https://www.imdb.com/title/tt1130884",
+    "tmdb_url": "https://www.themoviedb.org/movie/11324"
+  },
+  {
+    "movie_id": "106782",
+    "title": "Wolf of Wall Street, The",
+    "year": 2013,
+    "genres": [
+      "Comedy",
+      "Crime",
+      "Drama"
+    ],
+    "ml_url": "https://movielens.org/movies/106782",
+    "imdb_url": "https://www.imdb.com/title/tt0993846",
+    "tmdb_url": "https://www.themoviedb.org/movie/106646"
+  }
+]
