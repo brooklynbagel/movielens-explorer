@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  db:
+    image: mariadb:10.6
+    environment:
+      - MYSQL_ROOT_PASSWORD=${DB_PASSWORD}
+      - MYSQL_DATABASE=${DB_NAME}
+    volumes:
+      - ./db/sql:/docker-entrypoint-initdb.d
+      - ./db/ml-latest-small:/mnt/ml-latest-small
+    ports:
+      - 3306:3306
