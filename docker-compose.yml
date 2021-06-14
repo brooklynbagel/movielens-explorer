@@ -27,5 +27,3 @@ services:
     volumes:
       - ./db/sql:/docker-entrypoint-initdb.d
       - ./db/ml-latest-small:/mnt/ml-latest-small
-    ports:
-      - 3306:3306
